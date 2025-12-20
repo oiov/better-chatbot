@@ -499,7 +499,7 @@ export default function ChatBot({ threadId, initialMessages }: Props) {
             onFocus={isFirstTime ? undefined : handleFocus}
           />
           <p className="py-6 mt-10 text-center">
-            Powered by <a href="https://like.do" target="_blank" class="text-green-500 font-bold hover:underline underline-offset-4">LikeDo</a>
+            Powered by <a href="https://like.do" target="_blank" className="text-green-500 font-bold hover:underline underline-offset-4">LikeDo</a>
           </p>
         </div>
         <DeleteThreadPopup
