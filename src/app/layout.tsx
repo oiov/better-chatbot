@@ -9,6 +9,8 @@ import {
 import { Toaster } from "ui/sonner";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import GoogleAnalytics from '../google-analytics';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -49,13 +51,7 @@ export default async function RootLayout({
                 {children}
                 <Toaster richColors />
               </div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-22RPQ62H4E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-22RPQ62H4E');
-</script>
+              <GoogleAnalytics />
             </NextIntlClientProvider>
           </ThemeStyleProvider>
         </ThemeProvider>
