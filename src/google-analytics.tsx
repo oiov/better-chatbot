@@ -14,7 +14,7 @@ export default function GoogleAnalytics() {
     return null;
   }
 
-  const analyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+  const analyticsId = "G-22RPQ62H4E";
   if (!analyticsId) {
     return null;
   }
